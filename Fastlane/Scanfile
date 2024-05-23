@@ -1,0 +1,11 @@
+# For more information about this configuration visit
+# https://github.com/fastlane/scan#scanfile
+
+workspace "CI_CD_Integration.xcworkspace"  #poject name workspace
+scheme "CI_CD_Integration"
+sdk "iphonesimulator"
+device "iPhone 11"
+code_coverage true
+xcargs '-parallelizeTargets'
+prelaunch_simulator true
+derived_data_path "Build/"
